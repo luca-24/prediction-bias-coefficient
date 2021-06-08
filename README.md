@@ -25,6 +25,11 @@ The code to execute the algorithm presented in the paper is contained in the two
 - ``prepare_datasets.ipynb``:  extract the data from the selected dataset, convert it into a Pandas dataframe and save it into a csv file. This should be executed before ``text_classification.ipynb``. See next section for information on how to obtain the data and how to place them inside the project.
 - ``text_classification.ipynb``: run the classification task and evaluate the performance with a cross-validation strategy.
 
+To reproduce the results presented in the paper, execute the ``run_cross_validation`` function with the following parameters:
+```
+metrics = run_cross_validation(samples, n_folds=10, training_batch_size=8, n_training_iter=10, confidence_threshold=0.5)
+```
+
 ## Data
 
 The notebooks can be executed on two different datasets.
