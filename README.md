@@ -22,7 +22,7 @@ pip install -r requirements.txt
 ## Notebooks
 
 The code to execute the algorithm presented in the paper is contained in the two Jupyter Notebooks:
-- ``prepare_datasets.ipynb``:  extract the data from the selected dataset, convert it into a Pandas dataframe and save it into a csv file.
+- ``prepare_datasets.ipynb``:  extract the data from the selected dataset, convert it into a Pandas dataframe and save it into a csv file. This should be executed before ``text_classification.ipynb``. See next section for information on how to obtain the data and how to place them inside the project.
 - ``text_classification.ipynb``: run the classification task and evaluate the performance with a cross-validation strategy.
 
 ## Data
@@ -33,10 +33,10 @@ The notebooks can be executed on two different datasets.
 This dataset contains a small sample of the Yahoo! Movies community's preferences for various movies, rated on a scale from A+ to F. For the paper's purpose, the dataset also contains a large amount of descriptive information about many movies including synopsis and genre.
 https://webscope.sandbox.yahoo.com/catalog.php?datatype=r
 
-Once the data is obtained through the link above, it should be placed inside the folder ``data/webscope``.
+Once the data is obtained through the link above, it should be placed inside the folder ``data/webscope``. Then, ``prepare_datasets.ipynb`` should be executed to process the data in a format appropriate for ``text_classification.ipynb``.
 
 ### Reuters-21578
 This is a collection of documents that appeared on Reuters newswire in 1987. The documents were assembled and indexed with categories.
 http://archive.ics.uci.edu/ml/datasets/Reuters-21578+Text+Categorization+Collection
 
-Once the data is obtained through the link above, it should be placed inside the folder ``data/reuters``.
+Once the data is obtained through the link above, it should be placed inside the folder ``data/reuters``. Then, ``prepare_datasets.ipynb`` should be executed to process the data in a format appropriate for ``text_classification.ipynb``.
