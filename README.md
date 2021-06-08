@@ -5,7 +5,7 @@ This repository contains the code based on the paper "Evaluating the Prediction 
 ## Abstract:
 Prediction bias is a well-known problem in classification algorithms, which tend to be skewed towards more represented classes. This phenomenon is even more remarkable in multi-label scenarios, where the number of underrepresented classes is usually larger. Moreover, there are applications in which a prediction bias can translate into the discrimination or exclusion of certain minorities of the society. In light of this, we hereby present the Prediction Bias Coefficient (PBC), a novel measure that aims to assess the bias induced by label imbalance in multi-label classification. The approach leverages Spearman's rank correlation coefficient between the label frequencies and the F-scores obtained for each label individually. After describing the theoretical properties of the proposed indicator, we illustrate its behaviour on a classification task performed with state-of-the-art methods on two real-world datasets, and we compare it experimentally with other metrics described in the literature.
 
-## Usage
+## Configuration
 
 It is recommended to install the requirements in a Python virtual environment to avoid modifying system state. 
 ```bash
